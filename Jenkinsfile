@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent terraform-node 
 
     parameters {
         booleanParam(name: 'autoApprove', defaultValue: false, description: 'Automatically run apply after generating plan?')
